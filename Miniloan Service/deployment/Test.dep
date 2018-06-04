@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="Miniloan" managingXom="true">
+  <name>Test</name>
+  <uuid>8cb62964-201d-4fdd-bb12-e7621a810207</uuid>
+  <targets label="Test Environment"/>
+  <operations operationName="Miniloan ServiceOperation">
+    <operation href="Miniloan%20ServiceOperation.dop#30b58bec-77bb-430f-a9dd-2ed16dfa4426"/>
+    <properties key="ruleset.version">
+      <value><![CDATA[1.0]]></value>
+    </properties>
+    <properties key="ruleset.bom.enabled">
+      <value><![CDATA[true]]></value>
+    </properties>
+    <properties key="monitoring.enabled">
+      <value><![CDATA[true]]></value>
+    </properties>
+    <properties key="ruleset.sequential.trace.enabled">
+      <value><![CDATA[true]]></value>
+    </properties>
+  </operations>
+  <versionPolicies label="Increment minor version numbers" ruleset="INCREMENT_MINOR" default="true" recurrent="true">
+    <description><![CDATA[Updates the minor version for each ruleset. Makes the new version available but retains previous versions.]]></description>
+  </versionPolicies>
+  <versionPolicies label="Use the base version numbers" recurrent="true">
+    <description><![CDATA[Uses the numbers provided in the deployment configuration. Replaces the latest version of each ruleset with this release. Used for hot fixes or development.]]></description>
+  </versionPolicies>
+  <versionPolicies label="The user can define the version numbers" ruleset="MANUAL" recurrent="true">
+    <description><![CDATA[Allows you to enter your own version numbers. Used for hot fixes or updates to an earlier release.]]></description>
+  </versionPolicies>
+</com.ibm.rules.studio.model.decisionservice:Deployment>
