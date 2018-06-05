@@ -17,7 +17,7 @@ Finally, when Miniloan Service is in the Business console, you create a branch f
 You download the source files for the tutorial from Github and install them on your computer. These files are required to do the tutorial.
 
 **Procedure**
-1.   Go to the GitHub repository for the tutorial: [https://github.com/ODMDev/odm-cloud-getting-started](https://github.com/ODMDev/odm-cloud-getting-started) 
+1.   Go to the GitHub repository for the tutorial: [https://github.com/ODMDev/odm-on-cloud-getting-started](https://github.com/ODMDev/odm-on-cloud-getting-started) 
 2.   Download the contents of the repository to a directory on your computer. The files are downloaded in a compressed file that is named odm-cloud-getting-started-master.zip. 
 3.   Open the downloaded file <InstallDir\>/odm-cloud-getting-started-master.zip. InstallDir is used throughout the tutorial to refer to your directory for the GitHub files.
 4.   Extract the contents of the compressed file to the directory. You get a new directory, named odm-cloud-getting-started-master, which contains the following items:
