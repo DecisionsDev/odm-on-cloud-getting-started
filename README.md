@@ -2,7 +2,7 @@
 
 This tutorial shows you how to work on a decision service in the Operational Decision Manager on Cloud portal.
 
-Operational Decision Manager on Cloud is a complete system for creating and using rule applications. It enables you to express your organization's decisions and policies in business rules, and to make the rules available to your production applications. This service supports collaborative development as a cloud portal. Users can work together in the portal to develop and maintain the rules in decision services, which also define the implementation and deployment of the rules.
+Operational Decision Manager on Cloud is a complete system for creating and using rule applications. It enables you to express your organization's decisions and policies in business rules, and to make the rules available to your production applications. Users can work together in the portal to develop and maintain the rules in decision services.
 
 In this tutorial, you work in the cloud portal. You update the rules in a decision service, and then test the decision service. After the decision service passes the test, you deploy the rules from the decision service to different execution servers. Finally, you look at a sample application that uses the rules that were deployed from the decision service.
 
