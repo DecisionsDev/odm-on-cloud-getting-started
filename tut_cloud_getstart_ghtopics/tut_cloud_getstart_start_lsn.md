@@ -81,20 +81,21 @@ You add a test suite and run it to verify that the decision service works correc
 2.   Click the **New Test Suite** button ![""](../tut_cloud_getstart_ghimages/icon_gs_releases_plus.jpg). The dialog for creating a new test suite opens.
 3.   Click **Choose**, and navigate to <InstallDir\>/odm-cloud-getting-started-master/Miniloan Service. InstallDir is your directory for the extracted files from the GitHub repository, as shown in task1, step2.
 4.   Select miniloan-test.xlsx, and then click **Open**. 
-5.   Click the **Save and Run** button ![""](../tut_cloud_getstart_ghimages/icon_gs_releases_srbutton.jpg). 
-6.   Enter the information that is shown in the following image: 
+5.   Make sure that the selected server is Testing And Simulation Runtime, which is the default server for running tests and simulations. 
+6.   Click the **Save and Run** button ![""](../tut_cloud_getstart_ghimages/icon_gs_releases_srbutton.jpg). 
+7.   Enter the information that is shown in the following image: 
 
 ![Image shows dialog for creating new version.](../tut_cloud_getstart_ghimages/scrn_gs_releases_dialog3.jpg)
 
-7.   Click **Create New Version**, and then click **OK** in the Run Test Suite dialog. The console runs the test and switches to the Reports tab. A new report indicates a successful test by displaying a check mark in the Status column:
+8.   Click **Create New Version**, and then click **OK** in the Run Test Suite dialog. The console runs the test and switches to the Reports tab. A new report indicates a successful test by displaying a check mark in the Status column:
 
 ![Image shows the test suite with the test report.](../tut_cloud_getstart_ghimages/scrn_gs_releases_treport.jpg)
 
-8.   Click the report under Recent Report. The report opens, and displays details that include the following summary:
+9.   Click the report under Recent Report. The report opens, and displays details that include the following summary:
 
 ![Image shows the summary of the test run.](../tut_cloud_getstart_ghimages/scrn_gs_releases_report2.jpg)
 
-9.   Close the report. 
+10.   Close the report. 
 
 In the next task, you search for the decision table, update it, and create an action rule.
 

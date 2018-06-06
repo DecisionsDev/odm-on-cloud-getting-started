@@ -34,7 +34,8 @@ You test the ruleset to determine whether it executes correctly. You use the RES
 3.   Click **Test**. The Hosted Transparent Decision Service \(HTDS\) opens.
 4.   Enter the following data as the run request: 
 
-    "loan": {
+    {
+        "loan": {
             "amount": 500000,
             "duration": 240,
             "yearlyInterestRate": 0.05
@@ -45,6 +46,7 @@ You test the ruleset to determine whether it executes correctly. You use the RES
             "creditScore": 600,
             "yearlyIncome": 80000
           }
+     }
  
 Your run request should look as follows:
 
@@ -62,8 +64,10 @@ The rule application produces the expected results. The loan is rejected, and a 
 
 Satisfied that the rules work as expected, you return to the Business console to deploy the rules to the test environment. The integrator runs integration tests on the rules in the test environment. These tests determine the stability and reliability of the rules under load before they are promoted to the production environment for use with client applications.
 
+**Note:** If you are a business user, you cannot view the test and production environments, and cannot do steps 3 and 4.
+
 1.   Return to the Business console, and open your branch in the Miniloan Service decision service. 
-2.   Open the **Deployment** tab. In Configurations, click **Test**. 
+2.   Open the **Deployments** tab. In Configurations, click **Test**. 
 3.   Open the **Targets** tab. The Test configuration deploys the rules in the decision service to Rule Execution Server in the test environment.
 4.   Click the **Deploy** button ![""](../tut_cloud_getstart_ghimages/icon_gs_test_deploy.jpg). The deployment dialog opens. It shows the Server Test Environment as the target of the deployment.
 5.   Click **Deploy**, and click **OK** in the deployment status box. The list of reports opens in the Deployment tab. The new report shows that the rules have been deployed successfully:

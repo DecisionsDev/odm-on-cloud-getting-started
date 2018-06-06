@@ -34,25 +34,26 @@ You create a server to run the Miniloan Service sample application.
 
 **Procedure**
 1.   Download the Liberty application server. 
-2.   Decompress the Liberty file to the root of your main drive, for example, c:\\wlp. 
+2.   Decompress the Liberty file to a directory on your computer. The directory is referred to as <WLP_Home> in the following steps. 
 3.   From an administrator command prompt, create your server by running the following command: 
 
     
-    C:\wlp\bin>server create testGettingStarted
+    <WLP_HOME>\bin>server create testGettingStarted
     
 
-The command creates C:\\wlp\\usr\\servers\\testGettingStarted.
+The command creates the folder <WLP_HOME>\\usr\\servers\\testGettingStarted, which contains the server configuration and steps.
 
 4.   To create the profile, launch the server by using the following command: 
 
     
-    C:\wlp\bin>server start testGettingStarted
-    
+    <WLP_HOME>\bin>server start testGettingStarted
+
+You can access the started server at http://localhost:9080.
 
 5.   To stop the server, use the following command: 
 
     
-    C:\wlp\bin>server stop testGettingStarted
+    <WLP_HOME>\bin>server stop testGettingStarted
     
 
 
@@ -64,13 +65,13 @@ You use Maven to build the sample web application, and then you add the applicat
 1.   Go to the <InstallDir\>/odm-cloud-getting-started-master/miniloan-server directory. InstallDir is your directory for the extracted files from the GitHub repository that is listed in the prerequisites.
 2.   In a command prompt, call `mvn clean install`. The command builds the miniloan-webapp.war file in the target directory.
 3.   Copy <InstallDir\>/odm-cloud-getting-started-master/miniloan-server/target/zip to <WLP\_HOME\>/usr/servers/testGettingStarted/apps. The folder contains the .war file for the sample application: miniloan-webapp.war 
-4.   Declare the sample application by adding the following line in <WLP\_HOME\>/usr/servers/testGettingStarted/server.xml: 
+4.   Declare the sample application by adding the following lines just before *<\/server\>* in <WLP\_HOME\>/usr/servers/testGettingStarted/server.xml: 
 
-    
+      
     <!-- Miniloan application -->
-    <application type="war" id="miniloan-webapp"
-    name="miniloan-webapp"
-    location="${server.config.dir}/apps/miniloan-webapp.war">
+    <webApplication id="miniloan-webapp"
+    location="miniloan-webapp.war"
+    name="miniloan-webapp"/>
     </application>
     
     
@@ -85,7 +86,7 @@ You run the sample application.
 1.   Launch the server by using the following command: 
 
     
-    C:\wlp\bin>server start testGettingStarted
+    <WLP_HOME>\bin>server start testGettingStarted
     
 
 A message tells you when the build is complete. The build might take a few minutes to finish.
@@ -111,7 +112,7 @@ You can find additional information by selecting **Show trace** in the Execution
 5.   When you finish using the sample application, close the application in your browser and stop the Liberty application server by using the following command as shown in step 1: 
 
     
-    C:\wlp\bin>server stop testGettingStarted
+    <WLP_HOME>\bin>server stop testGettingStarted
     
 
 

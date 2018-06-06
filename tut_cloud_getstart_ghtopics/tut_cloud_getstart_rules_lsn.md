@@ -18,7 +18,7 @@ To make the first change, you use the search function to find all the rules that
 
 ![Image shows the search field.](../tut_cloud_getstart_ghimages/scrn_gs_rules_search.jpg)
 
-2.   Type score, and press Enter. The results show all the action rules and decision tables in which the word score occurs. You look at the rules, and conclude that you must edit the repayment and score decision table.
+2.   Type "score" and press Enter. The results show all the action rules and decision tables in which the word score occurs. You look at the rules, and conclude that you must edit the repayment and score decision table.
 3.   Click **repayment and score** in the list of search results. The decision table opens in the preview window. 
 
 ## Step 2: Modifying the decision table
@@ -42,7 +42,7 @@ You introduce the second policy change by creating an action rule. For more info
 2.   Click **Decision Artifacts**, and then click **validation** to open the folder. 
 3.   Click the **Create** button ![""](../tut_cloud_getstart_ghimages/icon_gs_releases_plus.jpg), and click **New Rule**. 
 4.   Enter check duration as the name of the rule, and click **Create**. 
-5.   Enter the following rule statement in the rule editor. You can copy the rule to the rule editor, or build the rule with the completion menu.
+5.   Enter the following rule statement in the rule editor. If your web browser supports it, you can copy the rule to the rule editor. Otherwise, type in the rule or build it with the completion menu.
 
 
     if
