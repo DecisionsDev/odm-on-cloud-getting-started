@@ -20,7 +20,8 @@ You download the source files for the tutorial from Github and install them on y
 1.   Go to the GitHub repository for the tutorial: [https://github.com/ODMDev/odm-on-cloud-getting-started](https://github.com/ODMDev/odm-on-cloud-getting-started) 
 2.   Download the contents of the repository to a directory on your computer. The files are downloaded in a compressed file that is named odm-cloud-getting-started-master.zip. 
 3.   Open the downloaded file <InstallDir\>/odm-cloud-getting-started-master.zip. InstallDir is used throughout the tutorial to refer to your directory for the GitHub files.
-4.   Extract the contents of the compressed file to the directory. You get a new directory, named odm-cloud-getting-started-master, which contains the following items:
+4.   Extract the contents of the compressed file to the InstallDir directory. You get a new directory, named odm-cloud-getting-started-master, that contains the following items:
+    -   miniloan.zip: This compressed file contains the Miniloan Service decision service and the miniloan-xom Java object model. You import this file into the Decision Center Business console.
     -   Miniloan Service: This decision service contains the rule artifacts for approving loans. The decision service was created in Rule Designer.
     -   miniloan-xom: This Java object model describes the classes that are used in the decision service.
     -   miniloan-server: This client application uses REST to call the rules that are deployed from the decision services.
@@ -73,15 +74,14 @@ If the Miniloan Service decision service is in the library, skip step 4 and go t
 You import the decision service into Decision Center.
 
 **Procedure**
-1.   On your computer, open the directory that contains the extracted tutorial files from GitHub: <InstallDir\>/odm-cloud-getting-started-master. 
-2.   Make a .zip file that contains the Miniloan Service and miniloan-xom directories. Give the file an appropriate name, for example, miniloan.zip.
-3.   In the Business console **LIBRARY** tab, click the **Import Decision Service** button ![""](../tut_cloud_getstart_ghimages/icon_gs_intro_import.jpg). 
-4.   Click **Choose**, and navigate to the .zip file that you created. 
 
-Do not select **Use Decision Governance Framework**. You do not use it in this tutorial.
+1.   In the Business console **LIBRARY** tab, click the **Import Decision Service** button ![""](../tut_cloud_getstart_ghimages/icon_gs_intro_import.jpg). 
+2.   Click **Choose**, and navigate to the miniloan.zip file in the directory <InstallDir\>/odm-cloud-getting-started-master, which you created in step 1. 
 
-5.   Select the file, and click **Open**. 
-6.   Click **Import**. The decision service is added to the library in the Business console. 
+**Note:** Do not select **Use Decision Governance Framework**. You do not use this feature in this tutorial.
+
+3.   Select the file, and click **Open**. 
+4.   Click **Import**. The decision service is added to the library in the Business console. 
 
 ## Step 5: Creating a branch
 
