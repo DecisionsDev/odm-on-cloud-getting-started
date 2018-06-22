@@ -20,7 +20,7 @@ You download the source files for the tutorial from Github and install them on y
 1.   Go to the GitHub repository for the tutorial: [https://github.com/ODMDev/odm-on-cloud-getting-started](https://github.com/ODMDev/odm-on-cloud-getting-started) 
 2.   Download the contents of the repository to a directory on your computer. The files are downloaded in a compressed file that is named odm-cloud-getting-started-master.zip. 
 3.   Open the downloaded file <InstallDir\>/odm-cloud-getting-started-master.zip. InstallDir is used throughout the tutorial to refer to your directory for the GitHub files.
-4.   Extract the contents of the compressed file to the InstallDir directory. You get a new directory, named odm-cloud-getting-started-master, that contains the following items:
+4.   Extract the contents of the compressed file to the InstallDir directory. You get a new directory, named odm-cloud-getting-started-master. It contains the following items:
     -   miniloan.zip: This compressed file contains the Miniloan Service decision service and the miniloan-xom Java object model. You import this file into the Decision Center Business console.
     -   Miniloan Service: This decision service contains the rule artifacts for approving loans. The decision service was created in Rule Designer.
     -   miniloan-xom: This Java object model describes the classes that are used in the decision service.
