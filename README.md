@@ -8,6 +8,7 @@ In this tutorial, you work in the cloud portal. You update the rules in a decisi
 
 **Important:** 
 
+-   You can do this tutorial in Operational Decision Manager on Cloud Express. However, only the parts of the tutorial on the development environment apply to Express. The parts that refer to the test and production environments only work in the full version of Operational Decision Manager on Cloud.
 -   The miniloan.zip file in this GitHub repository can be used in place of the compressed file that is imported in step 4 of the preparation task in the same tutorial in the IBM Knowledge Center: [Task 1: Preparing to do the tutorial](https://www.ibm.com/support/knowledgecenter/SS7J8H/com.ibm.odm.cloud.tutorials/tut_cloud_getstart_kctopics/tut_cloud_getstart_prep_lsn.html)
 -   You do not create a decision service in this tutorial. To learn how to create a decision service, see [Creating a decision service in Rule Designer.](https://www.ibm.com/support/knowledgecenter/SS7J8H/com.ibm.odm.cloud.tutorials/tut_cloud_ds_topics/odm_cloud_dservice_tut.html)
 -   This tutorial does not cover the decision governance framework, the system for coordinating work on projects in Decision Center. For more information about the framework, see [Governance principles.](https://www.ibm.com/support/knowledgecenter/SS7J8H/com.ibm.odm.dcenter.bu.bconsole/mng_changes/con_cmg_governance.html)
