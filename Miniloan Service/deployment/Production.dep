@@ -3,8 +3,8 @@
   <name>Production</name>
   <uuid>932a04db-5174-4be6-8b9d-e59f4c900e5f</uuid>
   <targets label="Production Environment"/>
-  <operations operationName="Miniloan ServiceOperation">
-    <operation href="Miniloan%20ServiceOperation.dop#30b58bec-77bb-430f-a9dd-2ed16dfa4426"/>
+  <operations operationName="Miniloan Service Operation.dop">
+    <operation href="Miniloan%20Service%20Operation.dop#30b58bec-77bb-430f-a9dd-2ed16dfa4426"/>
     <properties key="ruleset.version">
       <value><![CDATA[1.0]]></value>
     </properties>
