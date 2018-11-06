@@ -29,7 +29,7 @@ The cloud portal has three standard environments: development, test, and product
 
 2.   Click the **Development** deployment configuration to open it. Go through the tabs in the configuration:
     -   **General**: Provides an overview of the deployment configuration, including the name, type, RuleApp name, and base version number.
-    -   **Operations**: Lists the decision operations to deploy. Here, **Miniloan ServiceOperation** is selected for deployment. Decision operations define how the rules are used in specific rulesets for deployment. Hover over the decision operation name to see its content.
+    -   **Operations**: Lists the decision operations to deploy. Here, **Miniloan Service Operation** is selected for deployment. Decision operations define how the rules are used in specific rulesets for deployment. Hover over the decision operation name to see its content.
     -   **Targets**: Lists where the rules can be deployed. The environment for this deployment is the development environment.
     -   **Ruleset Properties**: Defines the versioning policy for each deployment. You use the default settings.
     -   **Groups**: Lets the administrator choose which groups can deploy using this deployment configuration.
