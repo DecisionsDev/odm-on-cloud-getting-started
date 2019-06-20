@@ -13,7 +13,7 @@ You open your branch and display its decision artifacts.
 **Procedure**
 1.   Click My Branch in the Branches tab of the Miniloan Service decision service. 
 2.   Click **Decision Artifacts** to see the rule artifacts. By default, only the rules are displayed.
-3.   Click **Types(1/5)**, select **All Projects** and **All Types**, and then click **Apply** to display all the artifacts in the decision service. The labels indicate the types of artifacts, and some show the number of artifacts: 
+3.   Hover over **Types(1/7) X** and click the **X** to display all the artifacts in the decision service. The labels indicate the types of artifacts, and some show the number of artifacts: 
 
 ![Image shows the rule artifacts.](../tut_cloud_getstart_ghimages/scrn_gs_start_artifacts.jpg)
 
@@ -103,5 +103,5 @@ In the next task, you search for the decision table, update it, and create an ac
 
 [![""](../tut_cloud_getstart_ghimages/home.jpg) **Back to table of contents**](../README.md)
 
-© Copyright IBM Corporation 2018
+© Copyright IBM Corporation 2019
 

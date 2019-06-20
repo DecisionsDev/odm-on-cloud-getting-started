@@ -18,7 +18,7 @@ You update the decision service in the cloud portal, which has three different w
 You need the following items to do this tutorial:
 
 -   Access to an instance of the Operational Decision Manager on Cloud portal
--   Access to ODMDEV on GitHub: [https://odmdev.github.io/\#/odm](https://odmdev.github.io/#/odm)
+-   Access to ODMDEV on GitHub: [https://github.com/ODMDev](https://github.com/ODMDev)
 
 ## More information
 
@@ -29,5 +29,5 @@ You need the following items to do this tutorial:
 
 [![""](../tut_cloud_getstart_ghimages/home.jpg) **Back to table of contents**](../README.md)
 
-© Copyright IBM Corporation 2018
+© Copyright IBM Corporation 2019
 

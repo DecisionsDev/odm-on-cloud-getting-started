@@ -19,7 +19,7 @@ You find the RuleApp from the decision service in the execution server, and look
 
 The RuleApp might contain more than one ruleset. You can find yours by looking at the creation dates.
 
-4.   Click **Miniloan\_ServiceRuleset** to open the ruleset in the Ruleset View. The Ruleset View shows information about the ruleset, including its name, version number, and creation date, and provides commands for viewing performance information and adding elements such as properties:
+4.   Click **Miniloan\_ServiceRuleset** to open the ruleset in the Ruleset View. The Ruleset View shows information about the ruleset, including its name, version number, and creation date, and provides commands for viewing performance information and adding elements such as properties. Note that the decision engine is subject to updates, and its version number can vary from what is shown in the image:
 
 ![Image shows the Ruleset View.](../tut_cloud_getstart_ghimages/scrn_gs_res_rview.jpg)
 
@@ -58,7 +58,7 @@ Your run request should look as follows:
 
 The rule application produces the expected results. The loan is rejected, and a message explains that the dept-to-income ratio is too big.
 
-6.   Close the HTDS window. 
+6.   Close the decision service execution window. 
 
 ## Step 3: Deploying to the test environment
 
@@ -80,7 +80,7 @@ Satisfied that the rules work as expected, you return to the Business console to
 
 ![Image shows the RuleApp in the navigator.](../tut_cloud_getstart_ghimages/scrn_gs_res_nav.jpg)
 
-9.   Click **Miniloan\_ServiceRuleset** to open the ruleset in the Ruleset View. The Ruleset View shows information about the ruleset, including its name, version number, and creation date, and provides commands for viewing performance information and adding elements such as properties:
+9.   Click **Miniloan\_ServiceRuleset** to open the ruleset in the Ruleset View. The Ruleset View shows information about the ruleset, including its name, version number, and creation date, and provides commands for viewing performance information and adding elements such as properties. Note that the decision engine is subject to updates, and its version number can vary from what is shown in the image:
 
 ![Image shows the Ruleset View.](../tut_cloud_getstart_ghimages/scrn_gs_res_rview.jpg)
 
@@ -103,5 +103,5 @@ In the next task, you set up a client application to call the rules from the exe
 
 [![""](../tut_cloud_getstart_ghimages/home.jpg) **Back to table of contents**](../README.md)
 
-© Copyright IBM Corporation 2018
+© Copyright IBM Corporation 2019
 

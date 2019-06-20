@@ -11,7 +11,7 @@ In this tutorial, you work in the cloud portal. You update the rules in a decisi
 -   You can do this tutorial in Operational Decision Manager on Cloud Express. However, only the parts of the tutorial on the development environment apply to Express. The parts that refer to the test and production environments only work in the full version of Operational Decision Manager on Cloud.
 -   The miniloan.zip file in this GitHub repository can be used in place of the compressed file that is imported in step 4 of the preparation task in the same tutorial in the IBM Knowledge Center: [Task 1: Preparing to do the tutorial](https://www.ibm.com/support/knowledgecenter/SS7J8H/com.ibm.odm.cloud.tutorials/tut_cloud_getstart_kctopics/tut_cloud_getstart_prep_lsn.html)
 -   You do not create a decision service in this tutorial. To learn how to create a decision service, see [Creating a decision service in Rule Designer.](https://www.ibm.com/support/knowledgecenter/SS7J8H/com.ibm.odm.cloud.tutorials/tut_cloud_ds_topics/odm_cloud_dservice_tut.html)
--   This tutorial does not cover the decision governance framework, the system for coordinating work on projects in Decision Center. For more information about the framework, see [Governance principles.](https://www.ibm.com/support/knowledgecenter/SS7J8H/com.ibm.odm.dcenter.bu.bconsole/mng_changes/con_cmg_governance.html)
+-   This tutorial does not cover the decision governance framework, the system for coordinating work on projects in Decision Center. For more information about the framework, see [Governance principles](https://www.ibm.com/support/knowledgecenter/SS7J8H/com.ibm.odm.dcenter.bu.bconsole/mng_changes/con_cmg_governance.html) and the video [Using the Decision Governance Framework in the Decision Center Business Console](https://https://www.youtube.com/embed/h2q3Age5-o4).
 
 ## Audience
 
@@ -19,7 +19,7 @@ The tutorial is for users who want to work on decision services in the cloud por
 
 ## Time required
 
-The tutorial takes about one hour to complete.
+1 hour
 
 ## Learning objectives
 
@@ -45,6 +45,6 @@ You learn how to do the following tasks:
 
 ## Licensing information
 
-Copyright IBM Corp. 1987, 2018. Licensed to the Apache Software Foundation \(ASF\) under one or more contributor license agreements. See the NOTICE file distributed with this work for additional information regarding copyright ownership. The ASF licenses this file to you under the Apache License, Version 2.0 \(the "License"\); you may not use this file except in compliance with the License. You may obtain a copy of the License at [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0). Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+Copyright IBM Corp. 1987, 2019. Licensed to the Apache Software Foundation \(ASF\) under one or more contributor license agreements. See the NOTICE file distributed with this work for additional information regarding copyright ownership. The ASF licenses this file to you under the Apache License, Version 2.0 \(the "License"\); you may not use this file except in compliance with the License. You may obtain a copy of the License at [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0). Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
 [**Next** ![""](tut_cloud_getstart_ghimages/next.jpg)](tut_cloud_getstart_ghtopics/tut_cloud_getstart_intro.md)

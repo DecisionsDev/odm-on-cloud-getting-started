@@ -38,11 +38,10 @@ You update the decision table. For more information, see [Decision table editor]
 
 You introduce the second policy change by creating an action rule. For more information, see [Building rules using the Intellirule editor](https://www.ibm.com/support/knowledgecenter/SS7J8H/com.ibm.odm.dcenter.bu.bconsole/shared_intellirule/tpc_intelli_build_rules.html).
 
-1.   Click **My Branch** in the navigation breadcrumbs. 
-2.   Click **Decision Artifacts**, and then click **validation** to open the folder. 
-3.   Click the **Create** button ![""](../tut_cloud_getstart_ghimages/icon_gs_releases_plus.jpg), and click **New Rule**. 
-4.   Enter check duration as the name of the rule, and click **Create**. 
-5.   Enter the following rule statement in the rule editor. If your web browser supports it, you can copy the rule to the rule editor. Otherwise, type in the rule or build it with the completion menu.
+1.   In **My Branch**, click **Decision Artifacts**, and then click **validation** to open the folder. 
+2.   Click the **Create** button ![""](../tut_cloud_getstart_ghimages/icon_gs_releases_plus.jpg), and click **New Rule**. 
+3.   Enter check duration as the name of the rule, and click **Create**. 
+4.   Enter the following rule statement in the rule editor. If your web browser supports it, you can copy the rule to the rule editor. Otherwise, type in the rule or build it with the completion menu.
 
 
     if
@@ -54,8 +53,8 @@ You introduce the second policy change by creating an action rule. For more info
 
 The rule checks the duration of a loan. If the duration is shorter than six months, the rule adds a rejection message to the loan and rejects the loan.
 
-6.   Click **Save**. 
-7.   Enter the following message, and then click **Create New Version**. 
+5.   Click **Save**. 
+6.   Enter the following message, and then click **Create New Version**. 
 
     Added rule for summer policy
 
@@ -66,5 +65,5 @@ In the next task, you test and deploy the decision service.
 
 [![""](../tut_cloud_getstart_ghimages/home.jpg) **Back to table of contents**](../README.md)
 
-© Copyright IBM Corporation 2018
+© Copyright IBM Corporation 2019
 

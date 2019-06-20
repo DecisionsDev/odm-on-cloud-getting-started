@@ -38,7 +38,7 @@ You create a server to run the Miniloan Service sample application.
 3.   From an administrator command prompt, create your server by running the following command: 
 
     
-    <WLP_HOME>\bin>server create testGettingStarted
+    <WLP_HOME>/bin>server create testGettingStarted
     
 
 The command creates the folder <WLP_HOME>\\usr\\servers\\testGettingStarted, which contains the server configuration and steps.
@@ -46,14 +46,14 @@ The command creates the folder <WLP_HOME>\\usr\\servers\\testGettingStarted, whi
 4.   To create the profile, launch the server by using the following command: 
 
     
-    <WLP_HOME>\bin>server start testGettingStarted
+    <WLP_HOME>/bin>server start testGettingStarted
 
 You can access the started server at http://localhost:9080.
 
 5.   To stop the server, use the following command: 
 
     
-    <WLP_HOME>\bin>server stop testGettingStarted
+    <WLP_HOME>/bin>server stop testGettingStarted
     
 
 
@@ -69,9 +69,8 @@ You use Maven to build the sample web application, and then you add the applicat
 
       
     <!-- Miniloan application -->
-    <webApplication id="miniloan-webapp"
-    location="miniloan-webapp.war"
-    name="miniloan-webapp"/>
+    <application type="war" id="miniloan-webapp" name="miniloan-webapp"
+    location="miniloan-webapp.war">
     </application>
     
     
@@ -86,7 +85,7 @@ You run the sample application.
 1.   Launch the server by using the following command: 
 
     
-    <WLP_HOME>\bin>server start testGettingStarted
+    <WLP_HOME>/bin>server start testGettingStarted
     
 
 A message tells you when the build is complete. The build might take a few minutes to finish.
@@ -112,7 +111,7 @@ You can find additional information by selecting **Show trace** in the Execution
 5.   When you finish using the sample application, close the application in your browser and stop the Liberty application server by using the following command as shown in step 1: 
 
     
-    <WLP_HOME>\bin>server stop testGettingStarted
+    <WLP_HOME>/bin>server stop testGettingStarted
     
 
 
@@ -122,5 +121,5 @@ For more tutorials on Operational Decision Manager on Cloud, see [Tutorials](htt
 
 [![""](../tut_cloud_getstart_ghimages/home.jpg) **Back to table of contents**](../README.md)
 
-© Copyright IBM Corporation 2018
+© Copyright IBM Corporation 2019
 

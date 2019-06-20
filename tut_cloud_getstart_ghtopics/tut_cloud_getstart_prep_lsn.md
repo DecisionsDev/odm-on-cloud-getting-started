@@ -17,23 +17,22 @@ Finally, when Miniloan Service is in the Business console, you create a branch f
 You download the source files for the tutorial from Github and install them on your computer. These files are required to do the tutorial.
 
 **Procedure**
-1.   Go to the GitHub repository for the tutorial: [https://github.com/ODMDev/odm-on-cloud-getting-started](https://github.com/ODMDev/odm-on-cloud-getting-started) 
+1.   Go to the main page of this GitHub repository: [Getting started in IBM® Operational Decision Manager on Cloud](https://github.com/ODMDev/odm-on-cloud-getting-started) 
 2.   Download the contents of the repository to a directory on your computer. The files are downloaded in a compressed file that is named odm-cloud-getting-started-master.zip. 
 3.   Open the downloaded file <InstallDir\>/odm-cloud-getting-started-master.zip. InstallDir is used throughout the tutorial to refer to your directory for the GitHub files.
 4.   Extract the contents of the compressed file to the InstallDir directory. You get a new directory, named odm-cloud-getting-started-master. It contains the following items:
-    -   miniloan.zip: This compressed file contains the Miniloan Service decision service and the miniloan-xom Java object model. You import this file into the Decision Center Business console.
-    -   Miniloan Service: This decision service contains the rule artifacts for approving loans. The decision service was created in Rule Designer.
-    -   miniloan-xom: This Java object model describes the classes that are used in the decision service.
-    -   miniloan-server: This client application uses REST to call the rules that are deployed from the decision services.
-    -   Documentation for the tutorial
+
+-   miniloan.zip: This compressed file contains the Miniloan Service decision service and the miniloan-xom Java object model. You import this file into the Decision Center Business console.
+-   Miniloan Service: This decision service contains the rule artifacts for approving loans. The decision service was created in Rule Designer.
+-   miniloan-xom: This Java object model describes the classes that are used in the decision service.
+-   miniloan-server: This client application uses REST to call the rules that are deployed from the decision services.
+-   Documentation for the tutorial
 
 ## Step 2: Gaining access to the cloud portal
 
 Each instance of the Operational Decision Manager on Cloud portal has an administrator, who invites people to the cloud portal and assigns user roles.
 
-You need a user role that gives you access to the cloud portal and the Business console. You can do this tutorial with the business user role or greater. Check with your administrator. If you already have access to the cloud portal, you can skip this step and go to step 3.
-
-Your cloud portal has an administrator. The administrator gives other people access to the portal by sending them invitations from the portal. The invitations enable people to connect to the portal for the first time.
+You need a user role that gives you access to the cloud portal and the Business console. You can do this tutorial with the business user role or greater. Check with the administrator of your cloud portal. The administrator gives people access to the portal by sending them invitations from the portal. The invitations enable people to connect to the portal for the first time. If you already have access to the cloud portal, you can skip this step and go to step 3.
 
 The administrator also assigns user roles, which determine which components can be accessed by the users. For more information, see [Cloud environments and user roles](https://www.ibm.com/support/knowledgecenter/SS7J8H/com.ibm.odm.cloud.admin/topics/con_work_env.html).
 
@@ -77,10 +76,10 @@ You import the decision service into Decision Center.
 
 1.   In the Business console **LIBRARY** tab, click the **Import Decision Service** button ![""](../tut_cloud_getstart_ghimages/icon_gs_intro_import.jpg). 
 2.   Click **Choose**, and navigate to the miniloan.zip file in the directory <InstallDir\>/odm-cloud-getting-started-master, which you created in step 1. 
+3.   Select the file, and click **Open**.
 
 **Note:** Do not select **Use Decision Governance Framework**. You do not use this feature in this tutorial.
 
-3.   Select the file, and click **Open**. 
 4.   Click **Import**. The decision service is added to the library in the Business console. 
 
 ## Step 5: Creating a branch
@@ -110,5 +109,5 @@ In the next task, you explore the contents of the decision service before making
 
 [![""](../tut_cloud_getstart_ghimages/home.jpg) **Back to table of contents**](../README.md)
 
-© Copyright IBM Corporation 2018
+© Copyright IBM Corporation 2019
 
