@@ -1,5 +1,5 @@
 /*
-* Copyright IBM Corp. 1987, 2018
+* Copyright IBM Corp. 1987, 2022
 * 
 * Licensed to the Apache Software Foundation (ASF) under one
 * or more contributor license agreements.  See the NOTICE file
@@ -64,13 +64,13 @@ $(document).ready(
 							$('#info-panel').css('visibility', 'visible');
 							if (!data.error) {
 								if (data.approved == true) {
-									$('#info-panel').attr('class','panel panel-success');
-									$('#info-header').text('Approved')
+									$('#info-header').attr('class','card-header bg-success');
+									$('#info-header').text('Approved request')
 									$('#info-text').html(format_json(data.response))
 
 								} else if (data.approved == false) {
-									$('#info-panel').attr('class','panel panel-warning');
-									$('#info-header').text('Rejected')
+									$('#info-header').attr('class','card-header bg-warning');
+									$('#info-header').text('Rejected request')
 									$('#info-text').html(format_json(data.response))
 								}
 							} else {
@@ -78,17 +78,17 @@ $(document).ready(
 									$('#info-text').text(data.text)
 
 								} else {
-									$('#info-text').text("An unkonw error occured")
+									$('#info-text').text("An unknown error has occured")
 								}
 
-								$('#info-panel').attr('class','panel panel-danger');
+								$('#info-header').attr('class','card-header bg-danger');
 								$('#info-header').text('Error')
 							}
 						});
 
 						request.fail(function(jqXHR, textStatus) {
 							console.log("Request failed: " + textStatus);
-							$('#info-panel').attr('class','panel panel-error');
+							$('#info-neader').attr('class','card-header bg-error');
 							$('#info-header').text('Error')
 							$('#info-text').text(textStatus)
 						});

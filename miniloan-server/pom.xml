@@ -6,13 +6,16 @@
   <name>distrib/gettingstarted/miniloan-server</name>
   <packaging>war</packaging>
   <version>0.1-SNAPSHOT</version>
-  <properties />
+    <properties>
+        <revision>LATEST-SNAPSHOT</revision>
+        <liberty-path>TO BE SET</liberty-path>
+    </properties>
   <dependencies>
 	<!-- Add httpclient and its dependencies -->
 	<dependency>
 		<groupId>org.apache.httpcomponents</groupId>
 		<artifactId>httpclient</artifactId>
-		<version>4.5.2</version>
+		<version>4.5.13</version>
 	</dependency>
 	<dependency>
 		<groupId>org.apache.httpcomponents</groupId>
@@ -27,7 +30,7 @@
 	<dependency>
 		<groupId>commons-codec</groupId>
 		<artifactId>commons-codec</artifactId>
-		<version>1.6</version>
+		<version>1.13</version>
 	</dependency>
 	<!-- End of dependencies for httpclient -->
      <dependency>
@@ -41,36 +44,37 @@
       <version>1.1</version>
       </dependency>
   </dependencies>
-  <build>
-	<resources>
-		<!-- i18n resources -->
-		<resource>
-			<directory>src/main/i18n</directory>
-		</resource>
-	</resources>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-eclipse-plugin</artifactId>
-        <configuration>
-          <wtpversion>2.0</wtpversion>
-          <wtpContextName>miniloan-webapp</wtpContextName>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-war-plugin</artifactId>
-        <configuration>
-        <outputDirectory>${project.build.directory}/zip</outputDirectory>
-        <warName>miniloan-webapp</warName>
-          <webResources>
-            <resource>
-              <directory>${project.build.sourceDirectory}</directory>
-              <targetPath>WEB-INF/classes</targetPath>
-            </resource>
-          </webResources>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+    <profiles>
+        <profile>
+            <id>start-application</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>io.openliberty.tools</groupId>
+                        <artifactId>liberty-maven-plugin</artifactId>
+                        <version>3.1</version>
+                        <executions>
+                            <execution>
+                                <configuration>
+                                    <installDirectory>${liberty-path}</installDirectory>
+                                    <serverName>testODMGettingStarted</serverName>
+                                    <timeout>60</timeout>
+                                </configuration>
+                                <id>create-server</id>
+                                <phase>pre-integration-test</phase>
+                                <goals>
+                                    <goal>create</goal>
+                                    <goal>start</goal>
+                                    <goal>deploy</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>
