@@ -102,9 +102,7 @@ public class Validate extends HttpServlet {
 			String result = "";
 			String server = json.getString("server");
 			String ruleset = json.getString("ruleset");
-			String instanceType = json.getString("instanceType");			
-			String url = "https://" + server +"/odm/" +
-			 instanceType + "/DecisionService/rest/v1/" + ruleset;
+			String url = server + "/rest/v1/" + ruleset;
 			boolean showTrace = (boolean) json.getBoolean("showTrace");
 			result = validateWithJRules(loan, borrower, url, json, showTrace);
 			System.out.println(result);

@@ -68,10 +68,10 @@
 <body>
 <div class="container">
     <div class="jumbotron">
-        <h1>ODM on cloud Sample</h1>
+        <h1>ODM SaaS Sample</h1>
         <p id="sample-name" class="lead">Loan request approval application</p>
         <hr class="my-4">
-        <p>Calls the ODM on cloud execution server to run a decision to approve or not a loan request.</p>
+        <p>Run a decision to approve or not a loan request through ODM on Cloud or CP4BA aaS Decision Service.</p>
     </div>
     <div>
         <form role="form" action="validate" method="post" class="form-horizontal">
@@ -169,52 +169,49 @@
                         </div>
                     </div>
                 <!-- Tab -->
-                <div id="execution" class="tab-pane">
+                <div id="execution" class="tab-pane" >
                     <div class="card">
                         <div class="card-header">
-                            <h4>Rule Execution Server information</h4>
+                            <h4>Decision Service information</h4>
                         </div>
                         <div class="card-body">
-                            <div class="row">
-                                <div class="input-group col-md-6 mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">Tenant URL</span>
-                                    </div>
-                                    <input id="server" type="text" class="form-control" id="server" name="server" value="[YourPortal].com" placeholder="Server">
-                                </div>
-                                <div class="input-group col-md-4 mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">User name</span>
-                                    </div>
-                                    <input
-                                            id="user" type="text" class="form-control" name="user" placeholder="user" value="user@my_domain.com">
-                                </div>
-                                <div class="form-check col-md-2 mb-3">
-                                    <label>
-                                        <input type="checkbox" name="trace" id="trace">Trace enabled</label>
-                                </div>
-                                <div class="input-group col-md-6 mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">Ruleset</span>
-                                    </div>
-                                    <input type="text"
-                                           class="form-control" id="ruleset" name="ruleset" value="Miniloan/Miniloan_ServiceRuleset" placeholder="Ruleset">
-                                </div>
-                                <div class="input-group col-md-4 mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">Password</span>
-                                    </div>
-                                    <input
-                                            id="password" type="password" class="form-control" name="password" placeholder="Password">
-                                </div>
-
-                                <div id="instanceChoice" class="col-md-2 mb-3>
-                                  <label class="radio-inline"> <input  checked="checked" type="radio" value="dev" name="instanceType">Dev</label>
-                                <label class="radio-inline"><input type="radio" value="test" name="instanceType">Test</label>
-                                <label class="radio-inline"><input type="radio" value="prod" name="instanceType">Prod</label>
-                            </div>
-
-                             </div>
+                        	<div class="form-group col-md-12">
+	                            <div class="row">
+	                                <div class="input-group mb-3">
+	                                    <div class="input-group-prepend">
+	                                        <span class="input-group-text">Decision Service URL</span>
+	                                    </div>
+	                                    <input id="server" type="text" size="50" class="form-control" id="server" name="server" value="https://<hostname>.<domain>/odm/prod/DecisionService" placeholder="Server">
+	                                </div>
+	                            </div>
+	                            <div class="row">
+	                                <div class="input-group mb-3">
+	                                    <div class="input-group-prepend">
+	                                        <span class="input-group-text">User name</span>
+	                                    </div>
+	                                    <input
+	                                            id="user" type="text" class="form-control" name="user" placeholder="user" value="user@my_domain.com">
+	                                </div>
+	                                <div class="input-group mb-3">
+	                                    <div class="input-group-prepend">
+	                                        <span class="input-group-text">Password</span>
+	                                    </div>
+	                                    <input
+	                                            id="password" type="password" class="form-control" name="password" placeholder="Password">
+	                                </div>
+	                                <div class="input-group mb-3">
+	                                    <div class="input-group-prepend">
+	                                        <span class="input-group-text">Ruleset</span>
+	                                    </div>
+	                                    <input type="text"
+	                                           class="form-control" id="ruleset" name="ruleset" value="Miniloan/Miniloan_ServiceRuleset" placeholder="Ruleset">
+	                                </div>
+	                                <div class="form-check">
+	                                    <label>
+	                                        <input type="checkbox" name="trace" id="trace">Trace enabled</label>
+	                                </div>
+	                             </div>
+	                         </div>
                         </div>
                     </div>
                 </div>
@@ -228,12 +225,10 @@
             </div>
         </form>
     </div>
-    <div class="row top15">
-        <div id="info-panel" class="card">
-           <div id="info-header" class="card-header">Response</div>
-            <div id="info-text" class="card-body" >nothing for now...</div>
-         </div>
-    </div>
+    <div id="info-panel" class="card">
+       <div id="info-header" class="card-header">Response</div>
+        <div id="info-text" class="card-body" >nothing for now...</div>
+     </div>
 </div>
 
 </body>
