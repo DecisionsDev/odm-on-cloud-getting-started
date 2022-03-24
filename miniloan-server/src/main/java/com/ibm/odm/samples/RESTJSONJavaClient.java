@@ -28,8 +28,10 @@ import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
+import org.apache.http.ssl.SSLContexts;
 
 public class RESTJSONJavaClient {
 
@@ -40,7 +42,13 @@ public class RESTJSONJavaClient {
 	 * @throws Exception
 	 */
 	public static synchronized CloseableHttpClient getClient() throws Exception {
-		CloseableHttpClient client = HttpClients.createDefault();
+		SSLConnectionSocketFactory sslsf = new SSLConnectionSocketFactory(
+		  SSLContexts.createDefault(),
+		  new String[] { "TLSv1.2" },
+		  null,
+		  SSLConnectionSocketFactory.getDefaultHostnameVerifier());
+	
+		CloseableHttpClient client = HttpClients.custom().setSSLSocketFactory(sslsf).build();
 		return client;
 	}
 

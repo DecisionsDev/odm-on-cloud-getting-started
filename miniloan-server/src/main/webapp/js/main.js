@@ -42,7 +42,6 @@ $(document).ready(
 							'ruleset' : $('input[name=ruleset]').val(),
 							'user' : $('input[name=user]').val(),
 							'password' : $('input[name=password]').val(),
-							'instanceType' : $('input[name=instanceType]:checked', '#instanceChoice').val(),
 							'yearly-income' : parseInt($('input[name=yearly-income]').val()),
 							'credit-score' : parseInt($('input[name=credit-score]').val()),
 							'amount' : parseInt($('input[name=amount]').val()),
