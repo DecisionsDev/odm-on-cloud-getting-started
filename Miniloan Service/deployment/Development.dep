@@ -2,7 +2,6 @@
 <com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="Miniloan" managingXom="true">
   <name>Development</name>
   <uuid>44b9b9ad-f66d-408e-8ef0-61c8fe12f445</uuid>
-  <targets label="Development Environment"/>
   <operations operationName="Miniloan Service Operation.dop">
     <operation href="Miniloan%20Service%20Operation.dop#30b58bec-77bb-430f-a9dd-2ed16dfa4426"/>
     <properties key="ruleset.version">
